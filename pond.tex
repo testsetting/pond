@@ -1,0 +1,43 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\setbeamertemplate{navigation symbols}{} %remove navigation symbols
+
+\usepackage{etex}
+
+\usetheme{Warsaw}
+%\usetheme{Boadilla}
+%\usetheme{Madrid}
+
+\usepackage[arrow,curve,matrix,frame]{xy}
+\xyoption{color}
+\usepackage{color}
+%\usepackage{xcolor}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{subfigure}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{amsmath} %align environment
+%\usepackage{ulem} %strikethrough text (horizontal)
+%\usepackage[makeroom]{cancel} %strikethrough text (diagonal)
+
+\input macro
+
+\begin{document}
+
+\title
+[Pond -- a non-instant messaging protocol by Adam Langley \hspace{0.5mm} \insertframenumber]
+{Pond -- a non-instant messaging protocol \\by Adam Langley}
+\author{Chitchanok Chuengsatiansup}
+\institute{Technische Universiteit Eindhoven}
+\date{}
+
+\frame{\titlepage}
+
+\include{intro}
+\include{crypto}
+\include{ratchet}
+\include{network}
+\include{bbs}
+\include{future}
+
+\end{document}
